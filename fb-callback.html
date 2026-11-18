@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="robots" content="noindex">
+<title>Đang quay về máy…</title></head>
+<body style="font-family:sans-serif;padding:2em">
+<p>Đang chuyển kết quả đăng nhập về công cụ trên máy của chủ kênh…</p>
+<script>
+// Facebook bắt redirect https; trang này chỉ chuyển nguyên tham số về công cụ đang chạy trên chính máy người dùng (localhost).
+location.replace("http://localhost:8765/" + location.search);
+</script>
+</body></html>
