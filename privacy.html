@@ -15,18 +15,18 @@
 <p>Cập nhật: 18/11/2026 · Áp dụng cho ứng dụng nội bộ <b>"Da Hanh Bao Cao"</b> của kênh YouTube Dạ Hành Tiên Đạo.</p>
 
 <h2>Ứng dụng làm gì</h2>
-<p>"Da Hanh Bao Cao" là công cụ riêng của chủ kênh Dạ Hành Tiên Đạo. Mỗi tuần, công cụ đọc số liệu thống kê của <b>chính kênh này</b> (lượt xem, thời gian xem, tỉ lệ bấm thumbnail, nguồn lượt xem, số người đăng ký) để lập một báo cáo tuần gửi cho chủ kênh. Công cụ không dành cho người dùng khác.</p>
+<p>"Da Hanh Bao Cao" là công cụ riêng của chủ kênh Dạ Hành Tiên Đạo. Công cụ làm 2 việc, chỉ trên <b>chính kênh này</b>: (1) mỗi tuần đọc số liệu thống kê (lượt xem, thời gian xem, tỉ lệ bấm thumbnail, nguồn lượt xem, số người đăng ký) để lập một báo cáo tuần gửi cho chủ kênh; (2) tải lên và hẹn giờ công khai các video do chính chủ kênh làm, đặt thumbnail, thêm video vào danh sách phát của kênh và đăng bình luận giới thiệu dưới video của kênh. Công cụ không dành cho người dùng khác.</p>
 
 <h2>Dữ liệu được truy cập</h2>
 <ul>
-<li>Chỉ quyền <b>đọc</b>: <code>youtube.readonly</code> và <code>yt-analytics.readonly</code>.</li>
-<li>Không đăng, sửa hay xoá bất cứ nội dung nào trên YouTube.</li>
+<li>Báo cáo tuần: quyền <b>đọc</b> <code>youtube.readonly</code> và <code>yt-analytics.readonly</code>.</li>
+<li>Đăng video: <code>youtube.upload</code> (tải video lên kênh) và <code>youtube.force-ssl</code> (đặt thumbnail, thêm vào danh sách phát, đăng bình luận giới thiệu). Chỉ chủ kênh chạy lệnh đăng; công cụ không xoá video và không tác động tới kênh hay nội dung của người khác.</li>
 <li>Không đọc dữ liệu cá nhân của người xem; YouTube Analytics chỉ cung cấp số liệu tổng hợp.</li>
 </ul>
 
 <h2>Lưu trữ và chia sẻ</h2>
 <ul>
-<li>Mã truy cập được lưu trên máy của chủ kênh và trong mục bí mật (Secrets) của kho mã riêng tư trên GitHub, chỉ chủ kênh truy cập được.</li>
+<li>Mã truy cập được lưu trên máy của chủ kênh và trong mục bí mật (Secrets) của kho mã riêng tư trên GitHub, chỉ chủ kênh truy cập được. Mã có quyền đăng video chỉ nằm trên máy của chủ kênh.</li>
 <li>Báo cáo chỉ gửi vào cuộc trò chuyện riêng của chủ kênh với bot Telegram của chính chủ kênh.</li>
 <li>Không bán, không chia sẻ, không dùng dữ liệu cho quảng cáo hay bất kỳ bên thứ ba nào.</li>
 </ul>
@@ -42,6 +42,6 @@
 
 <hr>
 <h2>English summary</h2>
-<p>"Da Hanh Bao Cao" is a private tool used only by the owner of the Dạ Hành Tiên Đạo YouTube channel. It requests read-only access (<code>youtube.readonly</code>, <code>yt-analytics.readonly</code>) to the owner's own channel analytics to produce a weekly report sent to the owner's private Telegram chat. It never posts, edits or deletes content, does not access viewers' personal data, and never sells or shares data with third parties. Tokens are stored only on the owner's computer and in the owner's private GitHub repository secrets. Access can be revoked at any time at myaccount.google.com/permissions. Use of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements. Contact: youtube.com/@dahanhtiendao.</p>
+<p>"Da Hanh Bao Cao" is a private tool used only by the owner of the Dạ Hành Tiên Đạo YouTube channel. It (1) reads the owner's own channel analytics (<code>youtube.readonly</code>, <code>yt-analytics.readonly</code>) to produce a weekly report sent to the owner's private Telegram chat, and (2) uploads and schedules the owner's own videos, sets their thumbnails, adds them to the channel's playlist and posts an introductory comment under them (<code>youtube.upload</code>, <code>youtube.force-ssl</code>), only when the owner runs it. It never deletes content or touches other channels, does not access viewers' personal data, and never sells or shares data with third parties. Tokens are stored only on the owner's computer and in the owner's private GitHub repository secrets. Access can be revoked at any time at myaccount.google.com/permissions. Use of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements. Contact: youtube.com/@dahanhtiendao.</p>
 </main></body>
 </html>
